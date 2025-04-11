@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+    --subcor: #e4eefb;
+}
 
 * {
     margin: 0;
@@ -12,7 +17,7 @@ body {
 }
 header {
     padding: 32px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--subcor);
     background-color: rgba(0, 0,0,0.1);
 }
 
@@ -29,15 +34,24 @@ header div a {
     font-family: "Roboto", sans-serif;
 }
 
+header div a:hover {
+    color: green;
+    transition: all 700ms;
+}
+
 #box{
     text-align: center;
-    padding: 32px
+    padding: 32px;
+    color: whitesmoke;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #box img{
     height: 355px;
     border-radius: 50%;
-    border: 5px solid #6e0342;
+    border: 5px solid var(--subcor);
     margin-bottom: 32px
 }
 
@@ -60,4 +74,8 @@ header div a {
     margin: 30px auto;
     font-size: 25px;
     line-height: 35px;
+}
+
+#box a {
+    text-decoration: none;
 }
